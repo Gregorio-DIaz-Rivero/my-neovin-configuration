@@ -62,4 +62,5 @@ require("nvim-lsp-installer").setup({
 })
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.tsserver.setup{}
+require'lspconfig'.ltex.setup{}
 
