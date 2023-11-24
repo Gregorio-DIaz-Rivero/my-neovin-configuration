@@ -63,7 +63,3 @@ require("nvim-lsp-installer").setup({
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.tsserver.setup{}
 
-
-require('hlslens').setup()
-local kopts = {noremap = true, silent = true}
-vim.api.nvim_set_keymap('n', '<ESC>', [[*<Cmd>lua require('hlslens').stop()<CR>]], kopts)

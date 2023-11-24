@@ -20,5 +20,4 @@
 	use "Hitesh-Aggarwal/feline_one_monokai.nvim"
 	use 'natecraddock/workspaces.nvim'
     use{'nvim-treesitter/nvim-treesitter'}
-    use {'kevinhwang91/nvim-hlslens'}
 end)
