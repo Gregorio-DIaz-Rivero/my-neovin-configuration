@@ -1,23 +1,20 @@
-	return require('packer').startup(function(use)
-	use 'wbthomason/packer.nvim'
-	use {
-    	"williamboman/nvim-lsp-installer",
-    	"neovim/nvim-lspconfig",
-	}	
-	use 'hrsh7th/cmp-nvim-lsp'
-	use 'hrsh7th/cmp-buffer'
-	use 'hrsh7th/cmp-path'
-	use 'hrsh7th/cmp-cmdline'
-	use 'hrsh7th/nvim-cmp'
-	use 'nvim-tree/nvim-web-devicons'
-	use{
+	return {
+    {"williamboman/nvim-lsp-installer"},
+    {"neovim/nvim-lspconfig"},	
+    {'hrsh7th/cmp-nvim-lsp'},
+    {'hrsh7th/cmp-buffer'},
+    {'hrsh7th/cmp-path'},
+    {'hrsh7th/cmp-cmdline'},
+    {'hrsh7th/nvim-cmp'},
+    {'nvim-tree/nvim-web-devicons'},
+	{
 		'dinhhuy258/sfm.nvim',
   		config = function()
 			require("sfm").setup()
 		end
-	}	
-	use 'freddiehaddad/feline.nvim'
-	use "Hitesh-Aggarwal/feline_one_monokai.nvim"
-	use 'natecraddock/workspaces.nvim'
-    use{'nvim-treesitter/nvim-treesitter'}
-end)
+	},	
+    {'freddiehaddad/feline.nvim'},
+    {"Hitesh-Aggarwal/feline_one_monokai.nvim"},
+    {'natecraddock/workspaces.nvim'},
+    {'nvim-treesitter/nvim-treesitter'}
+}

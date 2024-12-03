@@ -9,7 +9,7 @@ vim.opt.smartcase = true
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
- 
+require("config.lazy")
 local cmp = require'cmp'
 cmp.setup({
     snippet = {
@@ -61,6 +61,6 @@ require("nvim-lsp-installer").setup({
     }
 })
 require'lspconfig'.pyright.setup{}
-require'lspconfig'.tsserver.setup{}
+require'lspconfig'.ts_ls.setup{}
 require'lspconfig'.ltex.setup{}
 
